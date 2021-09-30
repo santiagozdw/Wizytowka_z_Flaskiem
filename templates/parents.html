@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+    {% block head %}
+        <title>Wizytowka</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    </head>
+    <body>       
+        <h1>Witaj na mojej stronie domowej</h1>
+        <img src="static/obrazdohtml.jpg" alt="Paweł" title="moje zdjęcie">
+        <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>
+    
